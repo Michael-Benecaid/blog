@@ -24,3 +24,7 @@ export const createPost = (values, callback) => {
 		payload: request
 	}
 }
+
+export const fetchPost = (id) => {
+	const request = axios.get(`${ROOT_URL}/post/${id}${API_KEY}`)
+}
